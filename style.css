@@ -13,8 +13,12 @@ navigation
 .header{
     display: flex;
     justify-content: space-between;
-    margin-top: 50px;
-    margin-bottom: 90px;
+    background-color: #fff4e7;
+    gap: 20%;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 .header-title{
     width: 500px;
@@ -59,8 +63,7 @@ container
 .container{
     background-color: #fff4e7;
     width: 100%;
-    height: 160vh;
-    margin-left: 50px;
+    /* height: 160vh; */
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -108,9 +111,11 @@ container
     border-radius: 5px;
     margin-top: 30px;
     margin-bottom: 50px;
+    border-style: none;
 }
 .container-image{
-    width: 75%;
+    width: 70%;
+    padding-bottom: 50px;
 }
 /*--------------------
 quick feature section 
@@ -119,25 +124,26 @@ quick feature section
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 50px;
-    gap: 70px;
+    margin-left: 20%;
+    margin-right: 20%;
+    gap: 5%;
     margin-bottom: 130px;
+    margin-top: 75px;
 }
 .quick-feature-images{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-gap: 24px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
 }
 .quick-image{
-    width: 342px;
-    height: 342px;
+    width: 12vw;
+    height: auto;
     border-radius: 8px;
 }
 .quick-features-info{
     display: flex;
     flex-direction: column;
     gap: 30px;
-
 }
 .quick-features-title{
     width: 468px;
@@ -148,6 +154,12 @@ quick feature section
     font-size: 45px;
     line-height: 53px;
     color: #727272;
+}
+.qft-bold{
+    color: #131313;
+}
+.qft-color{
+    color: #FF900E;
 }
 .quick-features-description{
     width: 537px;
@@ -174,21 +186,26 @@ quick feature section
     text-align: center;
     border-radius: 8px;
     color: #FFFFFF;
+    border-style: none;
 }
 .feature-list{
     width: 70%;
     display: flex;
-    gap: 50px;
-    justify-content: center;
+    gap: 150px;
+    justify-content: space-between;
     align-items: center;
     margin-left: 15%;
     margin-right: 15%;
 }
-.feature-list-info{
+.feature-list-image-box{
     width: 500px;
-    height: 662px;
+    height: 950px;
 }
 .feature-list-image{
+    width: 500px;
+    height: 850px;
+}
+.feature-list-info{
     width: 500px;
     height: 850px;
 }
@@ -201,31 +218,35 @@ quick feature section
     font-size: 45px;
     line-height: 53px;
     color: #131313;
+    border-left: 5px solid  #FF900E;
+    padding-left: 21px;
 }
 .feature-list-description{
     width: 500px;
-    height: 78px;
+    height: 200px;
     font-family: 'Work Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
     color: #727272;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 10px;
+    /* padding-bottom: 10px; */
 }
 .lists{
-    padding-top: 70px;
+    /* padding-top: 70px; */
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
+    margin-top: -15px;
 }
 .list{
-    width: 450px;
-    height: 120px;
+    width: 500px;
+    height: 130px;
     background: #FFFFFF;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
+    padding: 15px 25px;
 }
 .list-title{
     width: 400px;
@@ -236,11 +257,10 @@ quick feature section
     font-size: 20px;
     line-height: 23px;
     color: #131313;
-    padding-bottom: 20px;
 }
 .list-description{
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    /* padding-bottom: 20px; */
     width: 450px;
     height: 78px;
     font-family: 'Work Sans';
@@ -249,11 +269,6 @@ quick feature section
     font-size: 16px;
     line-height: 26px;
     color: #727272;
-}
-.feature-image-box{
-    display: flex;
-    flex-direction: column;
-    gap: -20px;
 }
 .feature-button{
     width: 342px;
@@ -268,6 +283,10 @@ quick feature section
     color: #FFFFFF;
     background-color: #FF900E;
     border-radius: 8px;
+    border-style: none;
+    position: relative;
+    right:-740px;
+    top: -200px
 }
 .feature-button > small{
     font-style: normal;
@@ -285,7 +304,7 @@ facts container
     width: 70%;
     margin-left: 15%;
     margin-right: 15%;
-    margin-top: 130px;
+    margin-top: 0;
     margin-bottom: 130px;
 }
 .facts-title{
@@ -311,7 +330,7 @@ facts container
 .facts{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
+    grid-gap: 30px;
     margin: 5% 2.5%;
 }
 .fact{
@@ -324,6 +343,11 @@ facts container
     height: 241.83px;
     border: 1px solid #FF900E;
     border-radius: 8px;
+    transition: transform 2s ease 1s;
+}
+.fact:hover{
+    background-color: rgb(131, 225, 226);
+    transform: scale(1.5, 1.5);
 }
 .fact-image{
     width: 45.22px;
@@ -389,12 +413,13 @@ sponsors section
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 40px;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 .sponsor-image{
     width: 165px;
     height: 50px;
+    filter: grayscale(100%);
 }
 /* -------------
 footer section 
@@ -407,6 +432,7 @@ footer section
     margin-right: 15%;
     padding-top: 35px;
     padding-bottom: 35px;
+    margin-bottom: 100px;
 }
 .footer-detail{
     width: auto;
@@ -418,4 +444,50 @@ footer section
     line-height: 23px;
     text-align: center;
     color: #424242;
+}
+/* -----------
+bonus section 
+-------------*/
+.old-projects{
+
+}
+.old-project-title{
+    width: 500px;
+    height: 100px; 
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+    margin-left: 15%;
+}
+.old-project-description{
+    width: 800px;
+    height: 200px;
+    font-family: 'Work Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    margin-left: 15%;
+}
+.projects{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 15%;
+    margin-right: 15%;
+    grid-gap: 20px;
+    justify-content: space-around;
+}
+.project{
+    width: 200px;
+    height: 200px;
+    transition: transform 3s ease 1s;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.project:hover{
+    transform: scale(2,2);
 }
